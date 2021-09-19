@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop The Baloon</title>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="Game.js"></script>
+    <link rel="stylesheet" href="Game.css">
+    
+</head>
+
+<body>
+    <div id="GameScreen">
+        <div id="Baloon" onmouseover="popupballon()">
+            
+        </div>
+        <div onclick="chkindex()" id="Statistic">
+            <p>Lives:</p>
+            <p>Level:</p>
+            <p id="score" >Score:</p>
+            
+            <button id="btnstart" onclick=" baloonadd() ,popuptask()">Start Game</button>
+            <p id="Task"></p>
+            <button onclick="closed()">Log Out</button>
+        </div>
+    </div>
+</body>
+
+</html>

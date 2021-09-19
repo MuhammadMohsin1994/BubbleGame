@@ -1,0 +1,57 @@
+#GameScreen
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    background-image: linear-gradient();
+}
+#Statistic
+{
+    border: 2px solid gray;
+    width: 40%;
+    height: 100%;
+    
+}
+#Statistic p
+{
+    color: white;
+    margin-left: 10%;
+}
+#Baloon
+{
+    width: 60%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 1%;
+    justify-content: space-evenly;
+}
+.bln
+{
+    width: 50px;
+    height: 50px;
+    
+    transition: opacity 2s;
+    
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(135deg);
+    /* margin-left: 5%; */
+    
+
+}
+
+@keyframes example
+{
+    /* 0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}    */
+}
